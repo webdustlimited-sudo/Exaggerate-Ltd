@@ -42,3 +42,14 @@ REQUEST A QUOTE:
 - The first submission may require FormSubmit's email activation/confirmation step.
 - Update the _next hidden field in quote.html if the live domain is not https://webdustlimited.com/thank-you.html.
 - The site also includes a mailto link for webdustlimited@gmail.com in the contact/quote areas.
+
+OUR PROJECTS UPDATE — 14 October 2026
+- Prominent Our Projects button on the home page.
+- Responsive portfolio with 11 clickable project cards with logos above clean company names, without visible URLs.
+- Our Projects navigation and footer links across the site.
+- External project links open in a new tab.
+- Existing Exaggerate branding, pages and enquiry features preserved.
+
+SUPPLIED LOGOS
+Ten logos copied from Documents/provided images. Uzima uses the supplied Desktop image, added on 14 October 2026.
+
