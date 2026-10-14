@@ -156,3 +156,33 @@ body.home main>.section:last-child .reveal{opacity:1;transform:none}
   body.home main>.section:last-child{padding:30px 0}
   .quote{padding:28px}
 }
+
+/* Portfolio: local original logos and accessible project links. */
+.projects-cta{background:var(--navy);color:#fff;border-color:var(--navy);box-shadow:0 10px 25px rgba(6,35,79,.16)}
+.projects-section{scroll-margin-top:120px;background:linear-gradient(180deg,#fff,#f5f9ff)}
+.projects-heading{display:flex;justify-content:space-between;align-items:center;gap:32px;margin-bottom:36px}
+.projects-heading .section-head{margin-bottom:0;max-width:730px}
+.projects-count{flex-shrink:0;padding:24px 30px;border-left:2px solid var(--line);color:var(--muted)}
+.projects-count b{display:block;font-size:3.2rem;line-height:1.1;color:var(--navy);letter-spacing:-.05em}
+.projects-count span{font-size:.85rem;font-weight:700}
+.projects-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.project-card{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:32px 28px 32px 24px;min-height:140px;justify-content:center;box-shadow:0 8px 28px rgba(0,35,100,.04);transition:transform .2s,box-shadow .2s,border-color .2s}
+.project-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--blue)}
+
+
+.project-card h3{font-size:1rem;line-height:1.45;color:var(--navy);margin:0;overflow-wrap:break-word}
+.project-arrow{position:absolute;right:12px;bottom:9px;color:var(--blue);font-size:1.2rem}
+.project-card:focus-visible,.projects-cta:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+.projects-note{font-size:.88rem;color:var(--muted);margin-top:24px}
+@media(min-width:901px) and (max-width:1150px){.nav{gap:10px}.navlinks{gap:0}.navlinks a{padding:10px 8px;font-size:.86rem}}
+@media(max-width:1000px){.projects-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.projects-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.projects-heading{align-items:flex-start}.projects-count{display:none}.project-card{padding:24px 24px 24px 16px;min-height:132px}}
+@media(max-width:400px){.projects-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.project-card,.projects-cta{transition:none}.project-card:hover{transform:none}}
+
+/* Supplied project logos, displayed in full above company names. */
+.project-card{padding:24px 20px 36px;justify-content:flex-start}
+.project-logo{height:150px;width:100%;display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+.project-logo img{width:100%;height:100%;object-fit:contain}
+@media(max-width:700px){.project-card{padding:20px 14px 32px}.project-logo{height:125px}}
+@media(max-width:400px){.project-logo{height:155px}}
